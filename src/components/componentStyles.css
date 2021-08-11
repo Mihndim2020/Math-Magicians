@@ -12,7 +12,7 @@ body {
   font-weight: bold;
   text-align: center;
   margin: 40px;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
 }
 
 .calculator-container {
@@ -22,7 +22,7 @@ body {
   font-size: 2rem;
 }
 
-.display-area  {
+.display-area {
   display: flex;
   flex-direction: row;
   align-content: flex-end;
@@ -33,7 +33,7 @@ body {
   height: 90px;
   width: 602px;
   border-radius: 5px;
-  background-color:#413e3e;
+  background-color: #413e3e;
 }
 
 .buttons-container {
