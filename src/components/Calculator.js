@@ -25,10 +25,15 @@ class Calculator extends React.Component {
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="calculator-container">
         <div className="display-area">
-          <p className="display-results">0</p>
+          <p className="display-results">
+            { total }
+            { operation }
+            { next }
+          </p>
         </div>
         <div className="buttons-container">
           <button type="button" className="calculator-button" onClick={() => { this.onClickHandler(calculate(this.state, 'AC')); }}>AC</button>
