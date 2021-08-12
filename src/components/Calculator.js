@@ -14,7 +14,11 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   // const setFunctions = {setTotal, setNext, setOperation};
-  const [{ total, next, operation }, { setTotal, setNext, setOperation }] = useState('');
+  // const [{ total, next, operation }, { setTotal, setNext, setOperation }] = useState('');
+
+  const [total, setTotal] = useState('');
+  const [next, setNext] = useState('');
+  const [operation, setOperation] = useState('');
   const obj = { total, next, operation };
 
   const onClickHandler = (newValue) => {
