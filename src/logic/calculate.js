@@ -16,11 +16,10 @@ function isNumber(item) {
 export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
-      total: null,
-      next: null,
-      operation: null,
+      total: '',
+      next: '',
+      operation: '',
     };
-    
   }
 
   if (isNumber(buttonName)) {
@@ -52,7 +51,7 @@ export default function calculate(obj, buttonName) {
       if (obj.next.includes('.')) {
         return {};
       }
-      return { next: `${obj.next}`};
+      return { next: `${obj.next}.` };
     }
     if (obj.operation) {
       return { next: '0.' };
@@ -71,11 +70,11 @@ export default function calculate(obj, buttonName) {
       return {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,
-        operation: null,
+        operation: '',
       };
     }
-      // '=' with no operation, nothing to do
-      return {};
+    // '=' with no operation, nothing to do
+    return {};
   }
 
   if (buttonName === '+/-') {
