@@ -11,6 +11,9 @@
 ## Built With
 
 - React
+- CSS3
+- Webpack
+- Babel
 
 ## Live Demo
 
@@ -36,8 +39,9 @@
 - run npm start
 
 ### Usage
-
+- Run npm install on a Terminal to install the modules
 - run npm start
+- Open http://localhost:3000 to view it in the browser.
 
 ## Author
 
