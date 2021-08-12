@@ -4,8 +4,24 @@ import calculate from '../logic/calculate';
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: '',
+      next: '',
+      operation: '',
+    };
     this.onClickHandler = this.onClickHandler.bind(this);
+  }
+
+  onClickHandler(newValue) {
+    if (newValue.total != null) {
+      this.setState({ total: newValue.total });
+    }
+
+    this.setState({ next: newValue.next });
+
+    if (newValue.operation != null) {
+      this.setState({ operation: newValue.operation });
+    }
   }
 
   render() {
