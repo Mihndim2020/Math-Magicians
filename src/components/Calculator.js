@@ -20,34 +20,39 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator-container">
-      <div className="display-area">
-        <p className="display-results">
-          { total }
-          { operation }
-          { next }
-        </p>
+    <div className="calcPage">
+      <div className="heading">
+        <h3>Let&apos;s do some math!</h3>
       </div>
-      <div className="buttons-container">
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, 'AC')); }}>AC</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '+/-')); }}>+/-</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '%')); }}>%</button>
-        <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '÷')); }}>÷</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '7')); }}>7</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '8')); }}>8</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '9')); }}>9</button>
-        <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, 'x')); }}>x</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '4')); }}>4</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '5')); }}>5</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '6')); }}>6</button>
-        <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '-')); }}>-</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '1')); }}>1</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '2')); }}>2</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '3')); }}>3</button>
-        <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '+')); }}>+</button>
-        <button type="button" className="calculator-button zero" onClick={() => { onClickHandler(calculate(obj, '0')); }}>0</button>
-        <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '.')); }}>.</button>
-        <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '=')); }}>=</button>
+      <div className="calculator-container">
+        <div className="display-area">
+          <p className="display-results">
+            { total }
+            { operation }
+            { next }
+          </p>
+        </div>
+        <div className="buttons-container">
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, 'AC')); }}>AC</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '+/-')); }}>+/-</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '%')); }}>%</button>
+          <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '÷')); }}>÷</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '7')); }}>7</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '8')); }}>8</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '9')); }}>9</button>
+          <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, 'x')); }}>x</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '4')); }}>4</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '5')); }}>5</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '6')); }}>6</button>
+          <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '-')); }}>-</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '1')); }}>1</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '2')); }}>2</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '3')); }}>3</button>
+          <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '+')); }}>+</button>
+          <button type="button" className="calculator-button zero" onClick={() => { onClickHandler(calculate(obj, '0')); }}>0</button>
+          <button type="button" className="calculator-button" onClick={() => { onClickHandler(calculate(obj, '.')); }}>.</button>
+          <button type="button" className="operator-button" onClick={() => { onClickHandler(calculate(obj, '=')); }}>=</button>
+        </div>
       </div>
     </div>
   );

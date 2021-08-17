@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import './components/componentStyles.css';
 import { Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import CalculatorPage from './pages/CalculatorPage';
 import HomePage from './pages/HomePage';
 import QuotesPage from './pages/QuotesPage';
@@ -11,6 +12,7 @@ class App extends React.Component {
   render() {
     return (
       <>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <HomePage />
