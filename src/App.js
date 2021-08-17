@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 import './components/componentStyles.css';
-// import Calculator from './components/Calculator';
+import { Route, Switch } from 'react-router-dom';
 import CalculatorPage from './pages/CalculatorPage';
 import HomePage from './pages/HomePage';
 import QuotesPage from './pages/QuotesPage';
@@ -11,15 +11,21 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div>
-          <CalculatorPage />
-        </div>
-        <div>
-          <HomePage />
-        </div>
-        <div>
-          <QuotesPage />
-        </div>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/calculator">
+            <CalculatorPage />
+          </Route>
+          <Route path="/home">
+            <HomePage />
+          </Route>
+          <Route path="/quotes">
+            <QuotesPage />
+          </Route>
+        </Switch>
+
       </>
     );
   }
