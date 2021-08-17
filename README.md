@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://github.com/Mihndim2020/Math-Magicians)
+[Live Demo Link](https://mihndim2020.github.io/Math-Magicians/)
 
 
 ## Getting Started
