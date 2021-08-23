@@ -19,7 +19,10 @@
 
 ## Live Demo
 
-[Live Demo Link](https://infallible-yonath-312afb.netlify.app/quotes/)
+[Live Demo Link](https://infallible-yonath-312afb.netlify.app/quotes)
+
+## Live Demo
+
 [Live Demo Link](https://microverse-math-magicians.herokuapp.com/)
 
 
