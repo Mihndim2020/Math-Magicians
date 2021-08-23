@@ -64,3 +64,59 @@ button {
 .zero {
   grid-column: 1 / span 2;
 }
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  background-color: rgb(235, 110, 110);
+}
+
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navBar h1 {
+  font-size: 4rem;
+}
+
+.navBar ul li {
+  margin-right: 5rem;
+  font-size: 1.3rem;
+}
+
+.homeContent {
+  text-align: left;
+  padding: 0 14rem;
+}
+
+.homeContent p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: rgb(58, 54, 54);
+}
+
+.homeContent h3 {
+  font-size: 3rem;
+}
+
+.calcPage {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 60px;
+}
+
+.heading {
+  width: 700px;
+  font-size: 2rem;
+}
+
+.quoteContent {
+  padding: 250px;
+  font-size: 2rem;
+  color: rgb(82, 78, 78);
+}
