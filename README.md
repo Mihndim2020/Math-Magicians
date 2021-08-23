@@ -19,7 +19,8 @@
 
 ## Live Demo
 
-[Live Demo Link](https://mihndim2020.github.io/Math-Magicians/)
+[Live Demo Link](https://infallible-yonath-312afb.netlify.app/quotes/)
+[Live Demo Link](https://microverse-math-magicians.herokuapp.com/)
 
 
 ## Getting Started
